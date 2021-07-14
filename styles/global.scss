@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/bootstrap";
+
+// html,
+// body {
+//   padding: 0 8rem;
+//   margin: 3rem auto 6rem;;
+//   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+//     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+//   line-height: 1.6;
+//   font-size: 18px;
+// }
+
+main {
+  margin-top: 6rem;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}

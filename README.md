@@ -1,2 +1,1 @@
-# hh-frontend
-frontend for the Hoosier Hackers student club website at Indiana University-Bloomington
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).

@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "LCDsolid";
+    font-display: swap;
+    src: url(../fonts/LCDsolid/LcdSolid-VPzB.ttf) format('truetype');
+}
+@font-face {
+    font-family: "FastHand";
+    font-display: swap;
+    src: url(../fonts/FastHand/FastHand-lgBMV.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Hack";
+    font-display: swap;
+    src: url(../fonts/Hack/hack-regular.woff) format('woff');
+}
+@font-face {
+    font-family: "Barcade";
+    font-display: swap;
+    src: url(../fonts/Barcade/barcade.ttf) format('truetype');
+}
+
+$brandFont: "Barcade";
+// $brandFont: "FastHand";
+$navFont: "Hack";
+
+$crimson: #990000;
+$creamGrey: #EDEBEB;
+$darkMidnight: #01426A;
+$midnight: #006298;
+$darkMajestic: #512A44;
+$majestic: #66435A;
+$mahogany: #4A3C31;
+$iuBlack: #191919;
+
+
+.logo {
+    color: $midnight !important;
+    font-family: $brandFont;
+}
+
+.navText {
+    font-family: $navFont;
+}
+
+.navbarStyling {
+    background-color: transparent;
+    color: $midnight !important;
+}
+
+.socialLinks {
+    padding-left: 10px;
+    margin-top: 10px;
+    display: block;
+
+    &>a {
+        padding-right: 10px;
+    }
+}
+
+.github {
+    &:hover {
+        color: black;
+    }
+}
+.discord {
+    &:hover {
+        color: #5865F2;
+    }
+}
+.twitter {
+    &:hover {
+        color: #1DA1F2;
+    }
+}
+.medium {
+    &:hover {
+        color: #000;
+    }
+}
+.spotify {
+    &:hover {
+        color: #1DB954;
+    }
+}
