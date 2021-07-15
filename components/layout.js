@@ -27,9 +27,7 @@ export default function Layout({ children }) {
 
       <NavbarHH />
 
-      <Container fluid="md">
-        <main>{children}</main>
-      </Container>
+      <main>{children}</main>
     </>
   );
 }

@@ -6,7 +6,7 @@ import { faDiscord, faMedium, faTwitter, faTwitch, faSpotify, faGithub } from "@
 
 export default function NavbarHH() {
   return (
-    <Navbar bg="" expand="lg" fixed="top" className={styles.navbarStyling}>
+    <Navbar bg="" expand="lg" className={styles.navbarStyling}>
 
       <Link href="/" passHref>
         <Navbar.Brand className={styles.logo}>(Hoosier Hackers)</Navbar.Brand>

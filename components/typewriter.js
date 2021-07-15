@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-const words = ["projects", "hackathon teams", "startups", "anything"];
+const words = ["websites.", "hackathon teams.", "startups.", "apps.", "anything."];
 
 export default function TypeWriter() {
   const [index, setIndex] = useState(0);

@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Barcade";
+    font-display: swap;
+    src: url(../fonts/Barcade/barcade.ttf) format('truetype');
+}
+@font-face {
+    font-family: "Hack";
+    font-display: swap;
+    src: url(../fonts/Hack/hack-regular.woff) format('woff');
+}
+
+$Barcade: "Barcade";
+$Hack: "Hack";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat&family=Open+Sans:wght@400;700;800&family=Roboto&display=swap');
+$Open-Sans: 'Open Sans', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
+$JockeyOne: 'Jockey One', sans-serif;
+
+$crimson: #990000;
+$creamGrey: #EDEBEB;
+$darkMidnight: #01426A;
+$midnight: #006298;
+$darkMajestic: #512A44;
+$majestic: #66435A;
+$mahogany: #4A3C31;
+$iuBlack: #191919;
+
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #512A44ff, #472D49ff, #3D304Eff, #333352ff, #293657ff, #1F395Cff, #153C61ff, #0B3F65ff, #01426Aff);
+$gradient-right: linear-gradient(90deg, #512A44ff, #472D49ff, #3D304Eff, #333352ff, #293657ff, #1F395Cff, #153C61ff, #0B3F65ff, #01426Aff);
+$gradient-bottom: linear-gradient(180deg, #512A44ff, #472D49ff, #3D304Eff, #333352ff, #293657ff, #1F395Cff, #153C61ff, #0B3F65ff, #01426Aff);
+$gradient-left: linear-gradient(270deg, #512A44ff, #472D49ff, #3D304Eff, #333352ff, #293657ff, #1F395Cff, #153C61ff, #0B3F65ff, #01426Aff);
+$gradient-top-right: linear-gradient(45deg, #512A44ff, #472D49ff, #3D304Eff, #333352ff, #293657ff, #1F395Cff, #153C61ff, #0B3F65ff, #01426Aff);
+$gradient-bottom-right: linear-gradient(135deg, #512A44ff, #472D49ff, #3D304Eff, #333352ff, #293657ff, #1F395Cff, #153C61ff, #0B3F65ff, #01426Aff);
+$gradient-top-left: linear-gradient(225deg, #512A44ff, #472D49ff, #3D304Eff, #333352ff, #293657ff, #1F395Cff, #153C61ff, #0B3F65ff, #01426Aff);
+$gradient-bottom-left: linear-gradient(315deg, #512A44ff, #472D49ff, #3D304Eff, #333352ff, #293657ff, #1F395Cff, #153C61ff, #0B3F65ff, #01426Aff);
+$gradient-radial: radial-gradient(#512A44ff, #472D49ff, #3D304Eff, #333352ff, #293657ff, #1F395Cff, #153C61ff, #0B3F65ff, #01426Aff);
+
+
+.heroRow {
+    place-content: center;
+    // place-items: center;
+    height: 50vh;
+    width: auto;
+    line-height: .7rem;
+    .discordButton {
+        background-color: #5865F2;
+        margin-right: 1rem;
+        box-shadow: black 3px 3px 5px;
+        border: transparent;
+    }
+    .emailButton {
+        background-color: $midnight;
+        box-shadow: black 3px 3px 5px;
+        border: transparent;
+    }
+}
+
+.hackathonSection {
+    background-color: $creamGrey;
+    text-align: center;
+    place-content: center;
+    height: 50vh;
+    width: auto;
+    color: $creamGrey;
+    &> .container-md {
+        place-content: center;
+    }
+    h1 {
+        // color: rgb(226, 171, 33);
+        background-image: $gradient-left;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: $Barcade;
+        font-size: 7rem;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    p {
+        color: $iuBlack;
+        font-size: 1.3rem;
+    }
+}
