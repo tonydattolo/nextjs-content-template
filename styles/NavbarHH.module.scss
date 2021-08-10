@@ -1,50 +1,23 @@
-@font-face {
-    font-family: "LCDsolid";
-    font-display: swap;
-    src: url(../fonts/LCDsolid/LcdSolid-VPzB.ttf) format('truetype');
-}
-@font-face {
-    font-family: "FastHand";
-    font-display: swap;
-    src: url(../fonts/FastHand/FastHand-lgBMV.ttf) format('truetype');
-}
-@font-face {
-    font-family: "Hack";
-    font-display: swap;
-    src: url(../fonts/Hack/hack-regular.woff) format('woff');
-}
-@font-face {
-    font-family: "Barcade";
-    font-display: swap;
-    src: url(../fonts/Barcade/barcade.ttf) format('truetype');
-}
-
-$brandFont: "Barcade";
-// $brandFont: "FastHand";
-$navFont: "Hack";
-
-$crimson: #990000;
-$creamGrey: #EDEBEB;
-$darkMidnight: #01426A;
-$midnight: #006298;
-$darkMajestic: #512A44;
-$majestic: #66435A;
-$mahogany: #4A3C31;
-$iuBlack: #191919;
+// @import url(_utils.scss);
+@import "utils";
 
 
 .logo {
     color: $midnight !important;
-    font-family: $brandFont;
+    font-family: $Barcade;
+    background-image: $blue-purple-gradient-left;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navText {
-    font-family: $navFont;
+    font-family: $Hack;
 }
 
 .navbarStyling {
     background-color: transparent;
     color: $midnight !important;
+    margin-bottom: 2rem;
 }
 
 .socialLinks {
@@ -58,27 +31,32 @@ $iuBlack: #191919;
 }
 
 .github {
+    color: black;
     &:hover {
-        color: black;
+        color: $midnight;
     }
 }
 .discord {
+    color: #5865F2;
     &:hover {
-        color: #5865F2;
+        color: $midnight;
     }
 }
 .twitter {
+    color: #1DA1F2;
     &:hover {
-        color: #1DA1F2;
+        color: $midnight;
     }
 }
 .medium {
+    color: #000;
     &:hover {
-        color: #000;
+        color: $midnight;
     }
 }
 .spotify {
+    color: #1DB954;
     &:hover {
-        color: #1DB954;
+        color: $midnight;
     }
 }

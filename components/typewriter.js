@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-const words = ["websites.", "hackathon teams.", "startups.", "apps.", "anything."];
+const words = ["websites.", "hackteams.", "startups.", "apps.", "anything."];
 
 export default function TypeWriter() {
   const [index, setIndex] = useState(0);
@@ -9,7 +9,10 @@ export default function TypeWriter() {
 
   // typeWriter
   useEffect(() => {
-    if (index === words.length) return;
+    if (index === words.length) {
+      // setIndex(0);
+      return () => setIndex(0);
+    }
 
     if ( subIndex === words[index].length + 1 && 
         index !== words.length - 1 && !reverse ) {

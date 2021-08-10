@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import styles from '../styles/index.module.scss'
-import utilStyles from '../styles/utils.module.scss'
+// import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/dist/client/link'
 import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
@@ -30,6 +30,7 @@ export async function getStaticProps() {
   }
 }
 
+
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
@@ -38,17 +39,19 @@ export default function Home({ allPostsData }) {
       </Head>
 
       {/* Hero Text */}
-      <section id="heroSection">
+      <section className={styles.heroSection}>
         <Container fluid="md">
-          <Row className={styles.heroRow}>
-            <Col md={6}>
+          <Row>
+            <Col md={6} className={styles.introCopy}>
               <TypeWriter />
-              <p>You want to nerd-out about emerging tech.</p>
-              <p>You want to find teammates for a hackathon.</p>
-              <p>You want to create projects to impress employers.</p>
-              <p>You want to find find co-founders to build startups.</p>
-              <p>You want to learn about the next big thing.</p>
-              <p>You belong here.</p>
+              <p> &#128302; nerd-out about emerging tech.</p>
+              <p> &#128227; get your projects featured.</p>
+              <p> &#128111; find teammates for a hackathon.</p>
+              <p> &#128640; create projects to impress employers.</p>
+              <p> &#128736; find co-founders to build startups.</p>
+              <p> &#129504; learn about the next big thing.</p>
+              <br />  
+              <p>&#9989; You belong here.</p>
               <br />
               <Button href="" className={styles.discordButton}><FontAwesomeIcon icon={faDiscord} />  Discord</Button>
               <Button href="mailto:hhackers@iu.edu" className={styles.emailButton}><FontAwesomeIcon icon={faEnvelope} />  Email Us</Button>
@@ -74,11 +77,9 @@ export default function Home({ allPostsData }) {
         <Container fluid="md">
           <Row>
             <Col>
-              <h1>HackIU2022</h1>
+              <h1>HackIU</h1>
               <p>
-                Join us during the second semester for IU's inaugural hackathon, 
-                a TechCrunch Disrupt Startup Battlefield style demo-day.
-                This years theme is Marketplaces and Web3.
+                throughout the semester we'll host a series of mini-hackathons with certain member-voted themes and prizes
               </p>
               <p></p>
             </Col>
@@ -87,24 +88,8 @@ export default function Home({ allPostsData }) {
         </Container>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
+    
 
-              <br/>
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-
-            </li>
-          ))}
-        </ul>
-      </section>
     </Layout>
   )
 }

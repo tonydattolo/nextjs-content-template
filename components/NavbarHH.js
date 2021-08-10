@@ -27,7 +27,7 @@ export default function NavbarHH() {
           <Nav.Item as="li">
             <Link href="/" passHref>
               <Nav.Link href="#home" passhref className={styles.navText}>
-                hackathon
+                announcements
               </Nav.Link>
             </Link>
           </Nav.Item>
@@ -35,7 +35,7 @@ export default function NavbarHH() {
           <Nav.Item as="li">
             <Link href="/" passHref>
               <Nav.Link href="#home" passhref className={styles.navText}>
-                hackTeams
+                interviews
               </Nav.Link>
             </Link>
           </Nav.Item>
@@ -48,13 +48,6 @@ export default function NavbarHH() {
             </Link>
           </Nav.Item>
           
-          <Nav.Item as="li">
-            <Link href="/" passHref>
-              <Nav.Link href="#home" passhref className={styles.navText}>
-                startups
-              </Nav.Link>
-            </Link>
-          </Nav.Item>
 
           {/* external social links section */}
           <Nav.Item as="li">
