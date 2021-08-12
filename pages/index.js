@@ -73,15 +73,12 @@ export default function Home({ allPostsData }) {
         </Container>  
       </section>
 
-      <section className={styles.hackathonSection}>
+      <section className={styles.newsSection}>
         <Container fluid="md">
           <Row>
             <Col>
-              <h1>HackIU</h1>
-              <p>
-                throughout the semester we'll host a series of mini-hackathons with certain member-voted themes and prizes
-              </p>
-              <p></p>
+              <h1>TOP NEWS:</h1>
+
             </Col>
           </Row>
 

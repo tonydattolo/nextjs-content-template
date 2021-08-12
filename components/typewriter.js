@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-const words = ["websites.", "hackteams.", "startups.", "apps.", "anything."];
+const words = ["teams.", "websites.", "community.", "startups.", "apps.", "anything."];
 
 export default function TypeWriter() {
   const [index, setIndex] = useState(0);
@@ -7,11 +7,12 @@ export default function TypeWriter() {
   const [blink, setBlink] = useState(true);
   const [reverse, setReverse] = useState(false);
 
+
   // typeWriter
   useEffect(() => {
     if (index === words.length) {
       // setIndex(0);
-      return () => setIndex(0);
+      // return () => setIndex(0);
     }
 
     if ( subIndex === words[index].length + 1 && 
@@ -44,8 +45,9 @@ export default function TypeWriter() {
 
   return (
     <>
+      <h1>Lets build: </h1>
       <h1>
-        Build {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
+        {`${words[index].substring(0, subIndex)}${blink ? "|" : " "}`}
       </h1>
     </>
   );

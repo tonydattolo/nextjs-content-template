@@ -21,16 +21,29 @@
         }
     }
 }
+@media screen and (max-width:380px) {
+    .heroSection {
+        .introCopy {
+            padding-left: 10px !important;
+        }
+        p {
+            font-size: .9rem;
+        }
+    }
+}
 @media screen and (max-width:766.98px) {
     .heroSection {
         .row {
             margin: auto;
         }
+        .introCopy {
+            padding-left: 40px;
+        }
     }
 }
 
 
-.hackathonSection {
+.newsSection {
     background-color: $creamGrey;
     text-align: center;
     place-content: center;
@@ -51,5 +64,12 @@
     p {
         color: $iuBlack;
         font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 369px) {
+    .newsSection {
+        h1 {
+            font-size: 4.5rem;
+        }
     }
 }

@@ -10,6 +10,9 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
+        {/* need to include this link to prevent large icon lazy loading with ssr */}
+        <link href="https://use.fontawesome.com/releases/v5.15.4/css/svg-with-js.css" rel="stylesheet"></link>
+
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"

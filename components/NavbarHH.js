@@ -1,11 +1,19 @@
+import Head from "next/dist/next-server/lib/head";
 import { Navbar, NavDropdown, Nav } from "react-bootstrap";
 import Link from "next/dist/client/link";
 import styles from "../styles/NavbarHH.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDiscord, faMedium, faTwitter, faTwitch, faSpotify, faGithub } from "@fortawesome/free-brands-svg-icons"
 
+// https://stackoverflow.com/questions/58765463/how-to-fix-fontawesome-icons-being-huge-on-page-load-in-react
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+
 export default function NavbarHH() {
   return (
+    // <style>
+    //   {{fontawesome-css}}
+    // </style>
     <Navbar bg="" expand="lg" className={styles.navbarStyling}>
 
       <Link href="/" passHref>
@@ -16,10 +24,11 @@ export default function NavbarHH() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto" as="ul">
           
+          
           <Nav.Item as="li">
-            <Link href="/aboutus" passHref>
-              <Nav.Link href="#home" passhref className={styles.navText}>
-                aboutUs
+            <Link href="/posts" passHref>
+              <Nav.Link href="#posts" passhref className={styles.navText}>
+                posts
               </Nav.Link>
             </Link>
           </Nav.Item>
@@ -48,6 +57,13 @@ export default function NavbarHH() {
             </Link>
           </Nav.Item>
           
+          <Nav.Item as="li">
+            <Link href="/aboutus" passHref>
+              <Nav.Link href="#home" passhref className={styles.navText}>
+                aboutUs
+              </Nav.Link>
+            </Link>
+          </Nav.Item>
 
           {/* external social links section */}
           <Nav.Item as="li">
