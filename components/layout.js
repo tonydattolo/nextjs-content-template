@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import { Container } from "react-bootstrap";
+import Footer from "./Footer";
 import NavbarHH from "./NavbarHH";
 
 export const siteTitle = "Hoosier Hackers";
@@ -32,6 +30,8 @@ export default function Layout({ children }) {
       <NavbarHH />
 
       <main>{children}</main>
+
+      <Footer />
     </>
   );
 }
