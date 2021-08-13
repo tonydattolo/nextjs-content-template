@@ -1,0 +1,84 @@
+@import 'utils';
+
+.eventsSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: $Hack;
+}
+
+.eventCard {
+    width: 80vw;
+    max-width: 500px;
+    margin-bottom: 15px;
+    // background-color: rgb(236, 236, 236);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 50px 15px 50px 15px;
+    padding: 10px 10px 0px;
+    background-image: $blue-purple-gradient-left;
+    .card-body {
+        padding-bottom: 0px;
+    }
+    .cardTitle {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $creamGrey;
+    }
+    .cardSubtitle {
+        font-style: italic;
+    }
+    .cardPreview {
+        margin-top: 30px;
+        color: $creamGrey;
+    }
+    .cardSeperator {
+        border: 1px solid $creamGrey;
+        margin-bottom: 3px;
+        width: 50%;
+        margin-left: 0;
+    }
+    .cardFooter {
+        background: transparent;
+        color: grey;
+        font-style: italic;
+        border-top: hidden;
+        padding-top: 0;
+    }
+    &:nth-child(3n+1) {
+        background-image: none;
+        background-color: $creamGrey;
+        .cardTitle {
+            color: $iuBlack;
+        }
+        .cardSubtitle {
+            font-style: italic;
+        }
+        .cardPreview {
+            color: $iuBlack;
+        }
+        .cardSeperator {
+            border: 1px solid $iuBlack;
+        }
+        .cardEventDate {
+            color: $iuBlack;
+        }
+        .cardFooter {
+            background: transparent;
+            color: grey;
+        }
+    }
+    
+    
+}
+
+.listGroupItem {
+    color: $midnight;
+    background-color: red;
+    // &:nth-child(odd) {
+    //     background-color: turquoise;
+    // }
+}
+.listGroupItem:nth-child(2n+1) {
+    color: $midnight;
+    // background-color: turquoise;
+}

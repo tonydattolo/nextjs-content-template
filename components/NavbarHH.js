@@ -27,15 +27,23 @@ export default function NavbarHH() {
           
           <Nav.Item as="li">
             <Link href="/posts" passHref>
-              <Nav.Link href="#posts" passhref className={styles.navText}>
+              <Nav.Link href="#posts" className={styles.navText}>
                 posts
+              </Nav.Link>
+            </Link>
+          </Nav.Item>
+
+          <Nav.Item as="li">
+            <Link href="/events" passHref>
+              <Nav.Link href="#posts" className={styles.navText}>
+                events
               </Nav.Link>
             </Link>
           </Nav.Item>
           
           <Nav.Item as="li">
             <Link href="/" passHref>
-              <Nav.Link href="#home" passhref className={styles.navText}>
+              <Nav.Link href="#home" className={styles.navText}>
                 announcements
               </Nav.Link>
             </Link>
@@ -43,7 +51,7 @@ export default function NavbarHH() {
           
           <Nav.Item as="li">
             <Link href="/" passHref>
-              <Nav.Link href="#home" passhref className={styles.navText}>
+              <Nav.Link href="#home" className={styles.navText}>
                 interviews
               </Nav.Link>
             </Link>
@@ -51,7 +59,7 @@ export default function NavbarHH() {
           
           <Nav.Item as="li">
             <Link href="/" passHref>
-              <Nav.Link href="#home" passhref className={styles.navText}>
+              <Nav.Link href="#home" className={styles.navText}>
                 memberProjects
               </Nav.Link>
             </Link>
@@ -59,7 +67,7 @@ export default function NavbarHH() {
           
           <Nav.Item as="li">
             <Link href="/aboutus" passHref>
-              <Nav.Link href="#home" passhref className={styles.navText}>
+              <Nav.Link href="#home" className={styles.navText}>
                 aboutUs
               </Nav.Link>
             </Link>
