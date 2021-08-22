@@ -16,6 +16,7 @@
     "bootstrap": "^4.6.0",
     "date-fns": "^2.22.1",
     "gray-matter": "^4.0.3",
+    "kute.js": "^2.1.2",
     "next": "^10.0.0",
     "react": "17.0.1",
     "react-bootstrap": "^1.6.1",
@@ -23,6 +24,5 @@
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
     "sass": "^1.35.1"
-  },
-  "devDependencies": {}
+  }
 }

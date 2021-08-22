@@ -1,0 +1,175 @@
+@import "utils";
+
+
+.waveExample {
+    position: relative; // position absolute children relative to this element
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    color: #FFFFFF;
+    background-image: $blue-purple-gradient-bottom;
+    
+    
+    .standardWaveBottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+    .standardWaveBottom svg {
+        position: relative;
+        display: block;
+        width: calc(140% + 1.3px);
+        height: 127px;
+    }
+    .standardWaveBottom .shapeFill {
+        fill: #FFFFFF;
+    }
+}
+
+.waveExample2 {
+    position: relative; // position absolute children relative to this element
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    color: #FFFFFF;
+    background-image: $blue-purple-gradient-top;
+    
+    .standardWaveTop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .standardWaveTop svg {
+        position: relative;
+        display: block;
+        width: calc(140% + 1.3px);
+        height: 127px;
+    }
+    
+    .standardWaveTop .shapeFill {
+        fill: #FFFFFF;
+    }
+    
+}
+
+
+.blobSection {
+    position: relative; // position absolute children relative to this element
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    color: black;
+
+    &.blob1 {
+        background-image: url(../svg/sample-blob-top.svg);
+        background-size: cover;
+    }
+    &.blob2 {
+        background-image: url(../svg/sample-blob-bottom.svg);
+        background-size: cover;
+    }
+}
+
+.layeredWaves {
+    position: relative; // position absolute children relative to this element
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    color: black;
+    
+    &.layeredWavesTop {
+        background-image: url(../svg/layered-waves-top.svg);
+        background-size: cover;
+    }
+    &.layeredWavesRight {
+        background-image: url(../svg/layered-waves-right.svg);
+        // background-size: 100%;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+}
+
+.polyGrid {
+    position: relative; // position absolute children relative to this element
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    color: wheat;
+    
+    background-image: url(../svg/low-poly-grid-haikei.svg);
+    background-size: cover;
+}
+
+.stepsLeft {
+    position: relative; // position absolute children relative to this element
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    color: wheat;
+    &.leftFix {
+        background-image: url(../svg/layered-steps-haikei.svg);
+        // background-size: cover;
+        background-position: left;
+    }
+    
+}
+
+.circleGrid {
+    position: relative; // position absolute children relative to this element
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    color: wheat;
+    
+    background-image: url(../svg/circle-scatter-haikei.svg);
+    background-size: cover;
+    
+}
+
+
+.spinnyBlob {
+    position: relative; // position absolute children relative to this element
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+    color: black;
+    &.spinnyTop {
+        background-image: url(../svg/blue-layered-waves-bottom.svg);
+        background-size: cover;
+    }
+    &.spinnyMid {
+        background-image: url(../svg/blob1.svg);
+        background-size: cover;
+        // background: #252997;
+    }
+    &.spinnyBot {
+        background-image: url(../svg/blue-layered-waves.svg);
+        background-size: cover;
+    
+    }
+
+}
