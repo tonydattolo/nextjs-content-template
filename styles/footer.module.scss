@@ -2,15 +2,14 @@
 
 .footerSection {
 
-    position: relative;
+    position: absolute;
     bottom: 0;
     width: 100%;
 
     margin-top: 20px;
-    // background-color: $crimson;
     background-image: $blue-purple-gradient-bottom;
     color: $creamGrey;
-    font-family: $Hack;
+    font-family: $Hack !important;
     text-align: center;
     padding: 40px 10px;
 }

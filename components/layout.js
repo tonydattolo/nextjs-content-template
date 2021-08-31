@@ -29,7 +29,7 @@ export default function Layout({ children }) {
 
       <NavbarHH />
 
-      <main>{children}</main>
+      <main style={{display:'flex',}}>{children}</main>
 
       <Footer />
     </>

@@ -3,21 +3,20 @@
 
 
 .logo {
-    color: $midnight !important;
-    font-family: $Barcade;
+    // color: $purple !important;
+    font-family: $Open-Sans;
+    font-weight: 700;
     background-image: $blue-purple-gradient-left;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .navText {
-    font-family: $Hack;
+    font-family: $Open-Sans;
 }
 
 .navbarStyling {
     background-color: transparent;
-    color: $midnight !important;
-    margin-bottom: 2rem;
 }
 
 .socialLinks {

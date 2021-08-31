@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <>
       <section className={styles.footerSection}>
-        <p>Hoosier Hackers</p>
+        <p>web3 dev club</p>
         {/* <br /> */}
         <p>Indiana University 2021</p>
         <p>Bloomington, IN</p>
-        <a href="mailto:hhackers@iu.edu">hhackers@iu.edu</a>
+        <a href="mailto:web3devclub@gmail.com">web3devclub@gmail.com</a>
       </section>
     </>
   );
